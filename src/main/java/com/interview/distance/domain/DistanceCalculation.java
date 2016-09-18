@@ -16,7 +16,6 @@ public class DistanceCalculation implements IDistanceCalculation {
     static {
         nodeMap = gb.build();
     }
-
     public List<PathInfo> path(String startNodeName, String endNodeName) {
         if (startNodeName == null || endNodeName == null) {
             return new ArrayList<PathInfo>(); // don't calculate distance
